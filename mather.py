@@ -1,0 +1,5 @@
+f = open("crime.csv", "r")
+print("beep")
+print(f.readline())
+print(f.readline())
+f.close()
