@@ -49,12 +49,13 @@
     </div>
     <script>
         var map;
-        require(["esri/map"], function(Map) {
-            map = new Map("map", {
-                basemap: "topo",
-                center: [-122.45, 37.75],
-                zoom: 13
-            });
+        require([
+            "esri/map",
+            "esri/arcgis/utils",
+        ], function(Map,arcgisUtils) {
+            arcgisUtils.createMap(29f70e40d1ef408dba31e57487598211, "mapDiv").then(function (response) {
+      map = response.map;
+  });
         });
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
