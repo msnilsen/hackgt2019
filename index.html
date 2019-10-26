@@ -5,6 +5,7 @@
     <title>Hack!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://js.arcgis.com/3.30/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/3.30/esri/css/esri.css">
     <link rel="stylesheet" href="index.css">
     <script src="https://js.arcgis.com/3.30/"></script>
 
@@ -45,15 +46,18 @@
                 <p>Test Test</p>
             </div>
         </div>
-        <div id="map"></div>
+        <div id="map">
+            <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="TestMap" src="//hackgt.maps.arcgis.com/apps/Embed/index.html?webmap=29f70e40d1ef408dba31e57487598211&extent=-135.0393,23.2997,-77.427,48.413&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe></div>
+        </div>
     </div>
+
     <script>
         var map;
         require([
             "esri/map",
             "esri/arcgis/utils"
             ], function(Map, arcgisUtils){
-            arcgisUtils.createMap("1a40fa5cc1ab4569b79f45444d728067", "mapDiv").then(function (response) {
+            arcgisUtils.createMap("29f70e40d1ef408dba31e57487598211", "mapDiv").then(function (response) {
         map = response.map;
   });
 });
