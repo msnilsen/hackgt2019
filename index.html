@@ -47,21 +47,10 @@
             </div>
         </div>
         <div id="map">
-            <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="TestMap" src="//hackgt.maps.arcgis.com/apps/Embed/index.html?webmap=29f70e40d1ef408dba31e57487598211&extent=-135.0393,23.2997,-77.427,48.413&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe></div>
+            <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="TestMap" src="//hackgt.maps.arcgis.com/apps/Embed/index.html?webmap=f90eb5b7449d4c34b1dca4548a051039&extent=-135.0393,23.2997,-77.427,48.413&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe></div>
         </div>
     </div>
 
-    <script>
-        var map;
-        require([
-            "esri/map",
-            "esri/arcgis/utils"
-            ], function(Map, arcgisUtils){
-            arcgisUtils.createMap("852a197664704164aa2864e5dd3611a2", "mapDiv").then(function (response) {
-        map = response.map;
-  });
-});
-    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
